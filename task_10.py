@@ -15,11 +15,12 @@ eagle_counter = 0
 tails_counter = 0
 for _ in range(n):
     droping = randint(0, 1)
-    print(droping)
+    print(droping, end= ' ')
     if droping == 0:
         tails_counter += 1
     elif droping == 1:
         eagle_counter += 1
+print()
 print('Coins with tails: ', tails_counter)
 print('Coins with eagle: ', eagle_counter)
 
