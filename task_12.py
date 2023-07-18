@@ -7,3 +7,10 @@
 # подсказки. Он называет сумму этих чисел S и их 
 # произведение P. Помогите Кате отгадать задуманные 
 # Петей числа.
+
+
+sum = int(input('Enter Sum of two numbers: '))
+prod = int(input('Enter Product of two numbers: '))
+first_number = (sum + (sum ** 2 - 4 * prod) ** 0.5) / 2
+second_number = (sum - (sum ** 2 - 4 * prod) ** 0.5) / 2
+print(first_number, second_number )
