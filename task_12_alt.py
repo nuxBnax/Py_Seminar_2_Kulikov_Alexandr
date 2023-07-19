@@ -9,13 +9,17 @@
 # Петей числа.
 
 
-sum = int(input('Enter Sum of two numbers: '))
-prod = int(input('Enter Product of two numbers: '))
+sum = int(input('Enter Sum of two numbers (X + Y): '))
+prod = int(input('Enter Product of two number (X * Y): '))
+x = 1
 
 if sum > 2000 or sum <= 0 or prod > 1000000 or sum == 1 or prod == 0:
         print('Error! Numbers X and Y must be from 1 to 1000')
-else:   
-    x = (sum + (sum ** 2 - 4 * prod) ** 0.5) / 2
-    y = (sum - (sum ** 2 - 4 * prod) ** 0.5) / 2
-    print('number X: ', x)
-    print('number Y: ', y)
+else:
+    while x <= 1000:
+        y = sum - x
+        if prod ==  y * x:
+            print('number X: ', x)
+            print('number Y: ', y)
+        x += 1
+
